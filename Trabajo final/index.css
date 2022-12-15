@@ -18,5 +18,12 @@ h1, h2{
     height: 260px;
     max-width: 33.33333%;
     font-size: large;
-
+}
+#txtVic1{
+color: azure;
+visibility: hidden;
+}
+#txtVic2{
+    color: azure;
+    visibility: hidden;
 }

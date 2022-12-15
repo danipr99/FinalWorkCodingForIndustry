@@ -1,12 +1,13 @@
-//'use strict'
+'use strict'
 let tabs = ["X", "O"];
 let turn =1;
 let placed = 0;
 let finish= false;
 let buttons = Array.from(document.getElementsByTagName("button"));
+
 let vicText1 = document.getElementById("txtVic1");
 let vicText2 = document.getElementById("txtVic2");
-let textError = document.getElementById("textError");
+
 
 buttons.forEach(x => x.addEventListener("click", placeTab));
 
@@ -22,7 +23,6 @@ function placeTab(event){
     let pressedButt = event.target;
     if(!finish && pressedButt.innerHTML == ""){
         pressedButt.innerHTML = tabs[turn];
-        //placed++;
         let gameStatus = game();
         if(gameStatus == 0){
             switchTurn();
