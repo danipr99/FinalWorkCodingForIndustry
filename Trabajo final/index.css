@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color: wheat;
+    font-family: Stencil Std, fantasy;
+}
+h1, h2{
+    text-align: center;
+}
+#board{
+    margin: auto;
+    width: 780px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#board > button{
+    width: 260px;
+    height: 260px;
+    max-width: 33.33333%;
+    font-size: large;
+
+}
